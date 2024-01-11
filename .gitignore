@@ -1,0 +1,4 @@
+*.log
+# Ignorar configuraciones de Visual Studio Code
+.vscode/
+.vs/
