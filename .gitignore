@@ -2,3 +2,5 @@
 # Ignorar configuraciones de Visual Studio Code
 .vscode/
 .vs/
+.vs/slnx.sqlite
+.vs/Pildora GIT/FileContentIndex/a69e22e3-d490-435e-b4e1-410c5e4ed3d7.vsidx
