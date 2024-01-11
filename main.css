@@ -1,0 +1,105 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Oxygen+Mono|VT323|Raleway");
+
+html {
+  font-family: "Oxygen Mono";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+
+  background-size: cover;
+}
+
+/* //// Custom Scrollbar //// */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+/*//////////////////////////////////*/
+
+header {
+  height: 160px;
+}
+header > h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+header > h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main {
+  min-height: 75vh;
+}
+
+.clickable-item {
+  text-decoration: none;
+}
+
+.card {
+  width: 300px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #242425;
+  border-radius: 0px;
+  box-shadow: 10px 6px 6px -1px rgb(51, 68, 68);
+}
+
+.card:hover,
+.octocat:hover {
+  transition: all 300ms ease;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.micol {
+  z-index: 10;
+  margin-bottom: -22px;
+}
+
+footer {
+  bottom: 0;
+  z-index: 0 !important;
+  background: url("./img/shelf.png") no-repeat scroll left;
+  background-size: 100% 76px;
+}
+.footer-legend {
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}
+
+.footer-legend > span > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 770px) {
+  .clock,
+  .plant {
+    display: none;
+  }
+}
